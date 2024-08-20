@@ -34,7 +34,6 @@ body {
     filter: brightness(0) invert(1);
     width: 120px;
     height: 110px;
-
 }
 
 .logo_title {
@@ -44,6 +43,7 @@ body {
     line-height: 55px;
     position: relative;
 }
+
 .logo_title:before {
     content: " ";
     background: #ffffff;
@@ -55,6 +55,7 @@ body {
     /* включаем абсолютное позиционирование относительно блока с relative */
     position: absolute;
 }
+
 .logo_title > p {
     margin: 0;
     font-family: "Days One", sans-serif;
@@ -93,4 +94,78 @@ body {
     background-color: transparent;
     color: inherit;
     outline: none;
+}
+
+@media screen and (max-width: 850px){
+    .logo {
+        width: 380px;
+        height: 90px;
+    }
+
+    .logo_img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .logo_title {
+        font-size: 30px;
+        width: 255px;
+        height: 65px;
+        line-height: 35px;
+    }
+
+    .logo_title:before {
+        height: 70px;
+        top: 5px;
+        left: -20px;
+    }
+
+    .header_search {
+        width: 490px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .header_search_input > input {
+        width: 490px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .logo {
+        width: 250px;
+        height: 70px;
+    }
+
+    .logo_img {
+        width: 60px;
+        height: 50px;
+    }
+
+    .logo_title {
+        font-size: 18px;
+        width: 155px;
+        height: 35px;
+        line-height: 25px;
+    }
+
+    .logo_title:before {
+        height: 40px;
+        top: 5px;
+        left: -20px;
+    }
+
+    .header_search {
+        width: 350px;
+        height: 60px;
+        font-size: 13px;
+    }
+
+    .header_search_input > input {
+        width: 350px;
+        height: 60px;
+        font-size: 13px;
+    }
 }
